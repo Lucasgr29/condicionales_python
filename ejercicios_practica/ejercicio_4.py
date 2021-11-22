@@ -17,12 +17,29 @@ texto_2 = '7'
 # se utiliza el operador mayor o menor con Strings (textos)
 # Imprima en pantalla según corresponda
 
+if str(texto_1) > str(texto_2):
+    print('{} es alfabeticamente mayor a {}'.format(texto_1,texto_2)) 
+else:
+    print('{} es alfabeticamente mayor a {}'.format(texto_2,texto_1))
+
 # 2-Transforma esas variables tipo texto en variables numéricas con (int)
 # y almacénalas en nuevas variables.
 # Compare las nuevas variables para ver cual es mayor o menor
 # utilizando los operadores correspondientes
 # ¿Cuál de las nuevas variables es mayor?
 # Imprima en pantalla según corresponda
+
+texto_1 = int(texto_1)
+texto_2 = int(texto_2)
+
+if texto_1 > texto_2:
+    print('{} es mayor a {}'.format(texto_1,texto_2))
+else:
+    print('{} es mayor a {}'.format(texto_2,texto_1))
+
+
+
+
 
 # Para pensar!
 # ¿Por qué cree que texto_2 es mayor a texto_1?
@@ -32,3 +49,6 @@ texto_2 = '7'
 # Esta pregunta estará repetida en el Campus para que puedan
 # responder.
 # NOTA: La respuesta no se encuentra en el apunte, sino en Google ;)
+
+#Es posible que la respuesta sea por que PYTHON compara el primer caracter de cada variable?
+#En este caso se compara al 7 con el 5 ya que alfabeticamente tiene un orden mayor el 7.
